@@ -1,0 +1,183 @@
+body {
+	font-size: 15px;	
+	right: 0px;
+	margin-top: 0px;
+	font-family: 'Noto Sans KR', sans-serif;
+	border-left: 1px;
+}
+
+nav {
+	background-color: #D5924F;
+	background: linear-gradient(to right, rgba(243, 144, 79,0.5), rgba(59, 67, 113,0.5));
+	
+
+}
+
+nav #nav-list {
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+}
+
+nav ul li {
+	background color: yellow;
+	padding: 5px;
+	text-align: center;
+	transition: background-color 0.5s, padding 1s linear;
+
+}
+
+/*Hover/ Mouse*/
+nav ul li:hover{
+	background-color: #D5924F;
+	border: 0px solid black;
+	transition: background-color 0.5s, padding 0.10s linear;
+
+
+}
+
+/*Change color Link Text*/
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
+#main{
+	//background-image: url(tea1.jpg);
+	background: linear-gradient(to right, rgba(243, 144, 79,0.5), rgba(59, 67, 113,0.5)),url(tea1.jpg);
+	min-height: 400px;
+	margin-top: 0px;
+	background-size: cover;
+	padding:	200px;
+
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 80px;
+
+}
+
+#main h1{
+	margin: 0px;
+	text-align: center;
+	font-size: 2.5rem;
+	font-family: monotype corsiva;
+
+}
+
+#main p{
+	width: 50%;	
+	font-family: monotype corsiva;
+	font-size: 1.5rem;
+
+
+}
+
+#Testimonials{
+
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap; //balance image
+
+}
+
+.customer{
+	border:2px solid black;
+	//box-shadow: 5px 15px 10px black;
+	border-radius: 100px;
+	margin-right: 20px;
+	margin:30px;
+	text-align: center;
+
+}
+
+.customer:hover{
+
+	box-shadow: 5px 30px 10px black;
+}
+
+#showcase{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	justify-content: center;
+
+}
+
+#showcase .cards:hover{
+		border: 1px solid black;
+		box-shadow: 5px 15px 10px black;
+	}
+#showcase .cards img{
+	transition: scale(2);
+}
+
+#showcase .cards{
+	margin-bottom: 20px;
+	margin-right: 10px;
+}
+
+
+.cards{
+	max-width: 350px;
+	display: flex;
+}
+
+
+.cards img {
+	height: 100px;
+	padding:5px;
+}
+
+.cards .button a{
+	padding: 5px;
+	color: black;
+	background-color: gray;
+	border-radius: 1px solid black;
+
+}
+
+
+/*Footer*/
+
+footer{
+	width: 100%;
+	margin-right: 0px;
+	margin-left: 0px;
+	display: flex;
+	background-color: yellow;
+	align-items: center;
+	justify-content: space-around;
+}
+
+footer a{
+	padding: 20px;
+}
+
+#media-icons ul {
+	display: flex;
+	list-style-type: none;
+	padding:20px;
+}
+
+
+
+
+/*Media query (balance image to other devices)*/
+@media screen and (min-width: 700px){
+	nav ul{
+		text-align: right;
+	}
+
+	nav ul li {
+		display: inline-block;
+		border-bottom: 0px;
+		border-left: 1px 
+	}
+}
+
+
